@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="theme-color" content="#2196F3">
+    <meta name="theme-color" content="#3F51B5">
     <title>Secure Squared</title>
 
     <!-- CSS  -->
@@ -53,10 +53,7 @@
     <div class="container">
         <h1 class="text_h center header cd-headline letters type">
             <span>Secure</span>
-            <span class="cd-words-wrapper waiting">
-                <b class="is-visible">your infrastructure</b>
-                <b>your data</b>
-                <b>what really matters</b>
+            <span class="typedText cd-words-wrapper waiting">
             </span>
         </h1>
     </div>
@@ -469,7 +466,7 @@
 
 <div id="duncan-modal" class="modal">
     <div class="modal-content">
-        <h4>Duncan Wright</h4>
+        <h4 class="">Duncan Wright</h4>
         <h5>Operations Director</h5>
         <p>
             Duncan started his career in the Merchant Navy, moving from oil tankers into sail training and then
@@ -531,9 +528,13 @@
 
 
     <!--  Scripts-->
-    <script src="min/plugin-min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="min/plugin-min.js"></script>
     <script src="min/custom-min.js"></script>
-    <script>
+<script type="text/javascript" src="min/typed.min.js"></script>
+
+<script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -548,5 +549,89 @@
         });
 
     </script>
+<script>
+    $(function () {
+        $(".typedText").typed({
+            strings: ["your data", "your infrastructure", "what really matters"],
+            typeSpeed: 200,
+            backDelay: 700,
+            loop: true,
+            contentType: 'html' // or text
+        });
+    });
+</script>
+<style>
+    /* code for animated blinking cursor */
+    .typed-cursor {
+        opacity: 1;
+        font-weight: 100;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        -ms-animation: blink 0.7s infinite;
+        -o-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite;
+    }
+
+    @-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    }
+    @-webkit-keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-ms-keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+<span class="element"></span>
     </body>
 </html>
